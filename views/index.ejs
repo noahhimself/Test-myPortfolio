@@ -1,0 +1,61 @@
+<% include partials/header.ejs %>
+
+<!-- Parallax -->
+<div class="parallax">
+
+    <!-- Start of Home section -->
+    <section id="home" class="sectionHome">
+        <h1>Noah Michael</h1>
+        <div id="typed" class="typed"></div>
+        <div class="homeIcons">
+            <a href="https://github.com/noahhimself"> <img src="../images/GithubButton.png" alt="Github" width="50px" height="50px"> </a>
+            <a href="https://plus.google.com/117824822136374686443"> <img src="../images/GooglePlusButton.png" alt="Google Plus" width="50px" height="50px"> </a>
+            <a href="https://www.linkedin.com/in/noah-michael-52194a129/"> <img src="../images/LinkedInButton.png" alt="LinkedIn" width="50px" height="50px"> </a>
+        </div>
+    </section> <!-- End of Home section -->
+
+    <!-- Start of About section -->
+    <section id="about" class="sectionAbout">
+        <h2 class="sectionHeading">About Me</h2>
+        <p>Hi, my name is Noah Michael.</p>
+    </section> <!-- End of About section -->
+
+    <!-- Start of Skills section -->
+    <section id="skills" class="sectionSkills">
+            <div class="column" style="background-color: white">
+                <div class="HTMLCSSJSColumn">
+                    <img src="../images/HTMLCSSJS.png" width="450px" height="250px">
+                </div>
+            </div>
+            <div class="column" style="background-color: black">
+                <div class="meanStackColumn">
+                    <img src="../images/MeanStack.png" width="700px" height="400px">
+                </div>
+            </div>
+    </section> <!-- End of Skills section -->
+
+    <!-- Start of Contact section -->
+    <section id="contact" class="sectionContact">
+        <div class="clientContactColumn">
+            <form method="post" action="#contact">
+                <input type="text" id="userName" name="userName" placeholder="Name" required>
+                <i class="fa fa-user" style="font-size:30px"></i>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+                <i class="fa fa-envelope" style="font-size:30px"></i>
+                <input type="text" id="message" name="message" placeholder="Message" required>
+                <i class="fa fa-pencil" style="font-size:30px"></i>
+                <input id="submitClick" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="myContactColumn">
+            <img class="myContactColumnLogo" src="../images/LogoBlack.png" alt="Logo">
+            <p class="myContactColumnPara">(437) 351-2006</p>
+            <i class="fa fa-mobile" style="font-size: 30px"></i>
+            <p class="myContactColumnPara">noahhimself@gmail.com</p>
+            <i class="fa fa-rocket" style="font-size: 30px"></i>
+        </div>
+    </section> <!-- End of Contact section -->
+
+</div> <!-- End of Parallax -->
+
+<% include partials/footer.ejs %>

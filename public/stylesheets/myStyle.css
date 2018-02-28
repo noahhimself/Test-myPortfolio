@@ -1,0 +1,275 @@
+/* Body */
+* {
+    margin: 0;
+    padding: 6px 10px;
+    font-family: roboto;
+    font-weight: normal;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 40px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.black {
+    background: rgba(0,0,0,0.6);
+    height: 100px;
+    padding: 10px 100px;
+}
+
+.logo {
+    margin-top: -20px;
+    float: left;
+    transition: 0.5s;
+}
+
+.black .logo {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 45px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background: rgba(0,0,0,0.5);
+    border-radius: 16px;
+}
+
+/* Section */
+.sectionHome {
+    width: 80%;
+    height: 380px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sectionAbout, .sectionSkills, .sectionContact {
+    width: 80%;
+    height: 410px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 100px;
+    background-color: whitesmoke;
+    background-position: center;
+}
+
+.sectionHeading {
+    margin-top: 20px;
+}
+
+/* Buttons */
+a {
+    text-decoration: none;
+}
+
+.homeIcons
+{
+    margin-top: 100px;
+    position: center;
+}
+
+/* Footer */
+footer {
+    width: auto;
+    height: 0px;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.footerLogo {
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.footerCopyRight {
+    float: left;
+    margin-top: 1%;
+    margin-left: 380px;
+}
+
+.footerIcons {
+    float: right;
+    margin-top: 6px;
+    margin-right: 0px;
+}
+
+/* Paragraphs & headings */
+p {
+    color: #23272b;
+    margin-top: 130px;
+    font-weight: 600;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 120px;
+    margin-top: 130px;
+    font-weight: 600;
+}
+
+/* Font */
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Thin.ttf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Typewriter */
+.typed {
+    margin-top: 70px;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+/* Parallax */
+.parallax {
+    background: url('../images/Parallax.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Skills section sectioning into 2 columns */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    height: 410px;
+}
+
+.HTMLCSSJSColumn {
+    position: center;
+    margin-top: 55px;
+}
+
+.meanStackColumn {
+    position: center;
+    margin-top: 0px;
+    margin-left: -120px;
+}
+
+/* Contact section sectioning into 2 columns */
+.clientContactColumn {
+    background-color: white;
+    float: left;
+    width: 50%;
+    padding: 0px;
+    height: 410px;
+}
+
+.clientContactColumn input {
+    padding-left: 50px;
+    font-size: 16px;
+}
+
+.clientContactColumn i {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.4);
+    transition:.3s;
+    margin-top: 26px;
+    margin-left: -450px;
+}
+
+input {
+    padding: 20px 20px;
+    width: 80%;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    margin: 20px 0px;
+    border-bottom: 1px solid black;
+}
+
+.myContactColumn {
+    background-color: white;
+    float: left;
+    width: 50%;
+    padding: 0px;
+    height: 410px;
+}
+
+.myContactColumn i {
+    position: absolute;
+    color: black;
+    transition:.3s;
+    margin-top: -42px;
+}
+
+.myContactColumnPara {
+    margin-top: 10px;
+    font-weight: 100;
+    margin-left: 40px;
+}
+
+.myContactColumnLogo {
+    height: 250px;
+    width: 250px;
+}
+
+.fa-mobile {
+    margin-left: -85px;
+}
+
+.fa-rocket {
+    margin-left: -140px;
+}
+
+/* Submit button styling */
+input[type=submit] {
+    width: 30%;
+    font-size: 15px;
+    background: #5d5d5d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #7E7E7F
+}
+
+.container {
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
