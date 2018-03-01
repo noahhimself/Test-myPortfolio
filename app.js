@@ -33,12 +33,12 @@ app.get('/', function(req, res, next) {
 
 // Post Methods
 app.post('/', function(req, res, next) {
-    var api_key = '8ea1b55a-9290-47b4-be31-b1629ba4a15e';
+    var api_key = 'key-a7fd0cd8bd08c7a85d4e930992ef5d1c';
     var domain = 'www.noahmichael-portfolio.herokuapp.com';
     var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
     var data = {
-        from: '<myPortfolio></myPortfolio> <postmaster@www.noahmichael-portfolio.herokuapp.com>',
+        from: 'myPortfolio <noahhimself@gmail.com>',
         to: 'noahhimself@gmail.com',
         subject: req.body.userName + " Sent you a message",
         html: "<b>Email: </b>" + req.body.email + "<br><b>Message: </b>" + req.body.message
