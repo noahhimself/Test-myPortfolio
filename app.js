@@ -23,16 +23,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/index', index);
+app.use('/', index);
 app.use('/users', users);
 
 // Get Methods
-app.get('/index', function(req, res, next) {
+app.get('/', function(req, res, next) {
     res.render('/index');
 });
 
 // Post Methods
-app.post('/index', function(req, res, next) {
+app.post('/', function(req, res, next) {
     var api_key = 'key-a7fd0cd8bd08c7a85d4e930992ef5d1c';
     var domain = 'sandboxf71719309ed34e85870094a9e99dfdc7.mailgun.org';
     var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
@@ -48,7 +48,7 @@ app.post('/index', function(req, res, next) {
         console.log(body);
         if (!error)
         {
-            res.redirect('/index#contact');
+            res.redirect('/#contact');
         }
         else
         {
