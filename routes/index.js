@@ -1,5 +1,5 @@
 var express = require('express');
-var mailgun = require('mailgun');
+var mailgun = require('mailgun-js');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
