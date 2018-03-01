@@ -1,5 +1,5 @@
 var express = require('express');
-var mg = require('mailgun');
+var mg = require('mailgun-js');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
