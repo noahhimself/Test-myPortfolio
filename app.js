@@ -1,5 +1,5 @@
 var express = require('express');
-var mailgun = require('mailgun-js');
+var mg = require('mailgun');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -28,7 +28,7 @@ app.use('/users', users);
 
 // Get Methods
 app.get('/', function(req, res, next) {
-    res.render('index');
+    res.render('/');
 });
 
 // Post Methods
