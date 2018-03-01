@@ -28,7 +28,7 @@ app.use('/users', users);
 
 // Get Methods
 app.get('/', function(req, res, next) {
-    res.render('/');
+    res.render('/index');
 });
 
 // Post Methods
